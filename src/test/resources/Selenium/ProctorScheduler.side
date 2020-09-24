@@ -1,0 +1,1061 @@
+{
+  "id": "b9b784d5-2e73-4f07-8fbe-065ae2ad2ff2",
+  "version": "2.0",
+  "name": "ProctorScheduler",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "867b5f2b-009d-4563-94d4-4ba6543d8ca1",
+    "name": "1-Login",
+    "commands": [{
+      "id": "90f0921c-b8f4-4ab3-bdcc-a2d6638aec06",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 1 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "075ac728-6031-4d6e-88fb-0a9ca02f7b25",
+      "comment": "",
+      "command": "open",
+      "target": "/ProctorScheduler/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4ec25576-f8ec-4b5e-b2fe-53885cf1e6fd",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "925f6a79-41d9-4505-968b-a035fce6c582",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2ff1473-f7a1-4671-b5e0-b2ac84581c23",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/form/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "2019-0721@oultoncollege.com"
+    }, {
+      "id": "e7c71ad6-e881-432f-a1bc-0f63e1adbd06",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "152cd00b-8968-43f4-a1ff-a09fc5fb8990",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/form/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "a12345"
+    }, {
+      "id": "97853725-5757-4c1c-a687-31dde5551327",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Login']", "xpath:attributes"],
+        ["xpath=//body[@id='login']/div/form/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba8ffb53-b0ea-4cab-9b91-c38118bdc979",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[contains(text(),'Logout')]",
+      "targets": [],
+      "value": "Logout"
+    }, {
+      "id": "59675ad2-5a41-46c3-8c5f-f5c09ab8463e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.userFullname",
+      "targets": [],
+      "value": "Joo Hung"
+    }, {
+      "id": "e4aa7736-70b2-4dd9-98fd-abc8ff4db535",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.userEmail",
+      "targets": [],
+      "value": "2019-0721@oultoncollege.com"
+    }, {
+      "id": "71666e30-26cb-433e-8bb6-6af18b5fd4c3",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 1 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9b92afb1-32c9-4e8e-a7b0-47d768996f61",
+    "name": "7-Logout",
+    "commands": [{
+      "id": "bb606f57-f755-4ccc-a8f0-af9f2cff05b8",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 7 completed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "12868a85-a53f-4295-a5a7-def5ce8b7c48",
+      "comment": "",
+      "command": "open",
+      "target": "/ProctorScheduler",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f183755a-7860-44aa-be5b-2f1ba2c708d8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.content",
+      "targets": [
+        ["css=.content", "css:finder"],
+        ["xpath=//body/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe28fd87-b94c-4d5e-b94a-e8366d4a5322",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Logout",
+      "targets": [
+        ["linkText=Logout", "linkText"],
+        ["css=#headerAccount > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Logout')]", "xpath:link"],
+        ["xpath=//div[@id='headerAccount']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, './logout')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,' Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cceccab2-4030-4727-af9e-8a3a41f374ce",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1536x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95c2124b-af03-49e8-aecb-88257d6dbbec",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h2",
+      "targets": [
+        ["css=h2", "css:finder"],
+        ["xpath=//body[@id='login']/div[3]/form/h2", "xpath:idRelative"],
+        ["xpath=//h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Proctor Scheduler - Login')]", "xpath:innerText"]
+      ],
+      "value": "Proctor Scheduler - Login"
+    }, {
+      "id": "b766d9ec-1270-4fd7-b989-157bac0a0a34",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 7 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "128f8dbe-002b-4310-927f-f53197dbb86e",
+    "name": "2-MonthNav",
+    "commands": [{
+      "id": "36188e58-4f1e-468b-ad8b-1d00ddf034a3",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 2 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b7f1d1b0-4588-4278-bafe-01fa88dbfc72",
+      "comment": "Open specific Calendar Month (zero-based Month index)",
+      "command": "open",
+      "target": "/ProctorScheduler/calendar.jsp?year=2020&month=5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "805b574b-a819-4e03-aa78-7100c4a343c0",
+      "comment": "",
+      "command": "executeScript",
+      "target": "var d = new Date(); var month = [\"January\", \"February\", \"March\", \"April\", \"May\", \"June\", \"July\", \"August\", \"September\", \"October\", \"November\", \"December\"]; return month[d.getMonth()]; ",
+      "targets": [],
+      "value": "currentMonth"
+    }, {
+      "id": "56eecf9d-5e3d-45c8-a308-e64078cb293e",
+      "comment": "",
+      "command": "echo",
+      "target": "Detected current month: '${currentMonth}'",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "141f6998-dfb1-4c5e-b03e-c15a5bd02f85",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.calendarMonth",
+      "targets": [
+        ["css=tr:nth-child(1) > th", "css:finder"],
+        ["xpath=//div[@id='calendar']/table/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"]
+      ],
+      "value": "June"
+    }, {
+      "id": "6dacebcc-ff69-4534-9f4f-c72d43d979c0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.calendarYear",
+      "targets": [
+        ["css=tr:nth-child(1) > th", "css:finder"],
+        ["xpath=//div[@id='calendar']/table/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"]
+      ],
+      "value": "2020"
+    }, {
+      "id": "a8601996-e01d-4501-b46f-a1f92ff6b04d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-chevron-right",
+      "targets": [
+        ["css=.fa-chevron-right", "css:finder"],
+        ["xpath=//div[@id='calendar']/table/tbody/tr/th/a[2]/i", "xpath:idRelative"],
+        ["xpath=//a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad194207-4168-45b3-a037-bbe2ecc212b5",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.calendarMonth",
+      "targets": [],
+      "value": "July"
+    }, {
+      "id": "83bc7710-69f1-4153-812f-183eac5bd28c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.calendarYear",
+      "targets": [
+        ["css=tr:nth-child(1) > th", "css:finder"],
+        ["xpath=//div[@id='calendar']/table/tbody/tr/th", "xpath:idRelative"],
+        ["xpath=//th", "xpath:position"]
+      ],
+      "value": "2020"
+    }, {
+      "id": "af557b17-522c-4a31-a37f-c2bef779c0ef",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 2 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "9ebfab0b-f6a8-4e5c-bf5e-01263df1458a",
+    "name": "3-ChooseDay",
+    "commands": [{
+      "id": "7e267d83-b4de-4f19-8b06-dcee1465543e",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 3 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95bc5870-9455-415f-b0c0-033d3918013d",
+      "comment": "Open specific Calendar Month (zero-based Month index)",
+      "command": "open",
+      "target": "/ProctorScheduler/calendar.jsp?year=2020&month=5",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d639d2c4-5c55-4d89-8dab-1be5d194b509",
+      "comment": "",
+      "command": "click",
+      "target": "id=day-19",
+      "targets": [
+        ["id=day-19", "id"],
+        ["css=#day-19", "css:finder"],
+        ["xpath=//td[@id='day-19']", "xpath:attributes"],
+        ["xpath=//div[@id='calendar']/table/tbody/tr[5]/td[6]", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[6]", "xpath:position"],
+        ["xpath=//td[contains(.,'19')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f83f04f2-1bdd-4cb9-b5ce-2e5e1c126cdf",
+      "comment": "",
+      "command": "assertText",
+      "target": "id=date",
+      "targets": [
+        ["id=date", "id"],
+        ["css=#date", "css:finder"],
+        ["xpath=//span[@id='date']", "xpath:attributes"],
+        ["xpath=//div/div/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Saturday, June 19th, 2020')]", "xpath:innerText"]
+      ],
+      "value": "Saturday, June 19th, 2020"
+    }, {
+      "id": "b251354a-81df-4bce-bf6f-19e2298594c5",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 3 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "faf486ab-d5ec-4fd1-a776-9356956aad35",
+    "name": "4-ScheduleEvent",
+    "commands": [{
+      "id": "f6b61bb3-e1dc-4f29-bf3e-47567c38cab5",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 4 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7849f6da-5e73-4a4f-9d43-0f10654b27e6",
+      "comment": "Open specific Date of month (zero-based Month index)",
+      "command": "open",
+      "target": "/ProctorScheduler/dailyview.jsp?date=2020-06-19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c23766f-b7fb-440a-a339-d2ec2a958d40",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=12pm",
+      "targets": [
+        ["linkText=12pm", "linkText"],
+        ["css=.scheduleTimeslot:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'12pm')]", "xpath:link"],
+        ["xpath=//div[@id='timeslotView']/table/tbody/tr[6]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/ProctorScheduler/schedule.jsp?date=2020-06-19&time=24')]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'12pm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3ccc5e4d-b5f5-48b5-96e8-44bf263aaf87",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b747ac65-0dee-4755-ab03-d06dc517b45c",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "birthday"
+    }, {
+      "id": "4db1769b-39cf-4514-9b0e-463090f487c9",
+      "comment": "",
+      "command": "click",
+      "target": "name=startTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d88a77eb-d245-4a88-8051-f0c44d9628c2",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=startTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f7b5396-63db-4de8-ab03-ff810e074e2b",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=startTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0203642-03d1-4823-90ec-653cf544ecb7",
+      "comment": "",
+      "command": "type",
+      "target": "name=startTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": "11:00"
+    }, {
+      "id": "a3824c4c-8019-422b-a380-1bd4566eda1d",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=startTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7ac840d4-9126-4c9e-8519-af71b349e11b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.form-row:nth-child(6)",
+      "targets": [
+        ["css=.form-row:nth-child(6)", "css:finder"],
+        ["xpath=//li[6]", "xpath:position"],
+        ["xpath=//li[contains(.,'Description')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f60909da-4156-4254-93a6-bcfb20ecb63b",
+      "comment": "",
+      "command": "click",
+      "target": "name=endTime",
+      "targets": [
+        ["name=endTime", "name"],
+        ["css=.form-row:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='endTime']", "xpath:attributes"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4332c865-965e-4caf-bbcf-8ce133f6410f",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=endTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d67720b4-c47a-4b39-a5a0-e3a3b7e2eea8",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "name=endTime",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "49b37216-95ae-40d4-859a-eb5540f26956",
+      "comment": "",
+      "command": "type",
+      "target": "name=endTime",
+      "targets": [
+        ["name=startTime", "name"],
+        ["css=.form-row:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='startTime']", "xpath:attributes"],
+        ["xpath=//li[3]/input", "xpath:position"]
+      ],
+      "value": "13:00"
+    }, {
+      "id": "26487868-3aca-4025-83f8-08856e87e2a8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=endTime",
+      "targets": [
+        ["name=endTime", "name"],
+        ["css=.form-row:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='endTime']", "xpath:attributes"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "d1a7b66c-6b5c-40c7-99fc-0287c5dbd2ef",
+      "comment": "",
+      "command": "click",
+      "target": "name=endTime",
+      "targets": [
+        ["name=endTime", "name"],
+        ["css=.form-row:nth-child(4) > input", "css:finder"],
+        ["xpath=//input[@name='endTime']", "xpath:attributes"],
+        ["xpath=//li[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33bdd8cf-8237-4ae3-b3a0-e7ee77d992da",
+      "comment": "",
+      "command": "click",
+      "target": "id=appointmentType",
+      "targets": [
+        ["id=appointmentType", "id"],
+        ["name=appointmentType", "name"],
+        ["css=#appointmentType", "css:finder"],
+        ["xpath=//select[@id='appointmentType']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c189eb8-14e7-45b2-bff0-c559620fd235",
+      "comment": "",
+      "command": "select",
+      "target": "id=appointmentType",
+      "targets": [],
+      "value": "label=Reading"
+    }, {
+      "id": "30d41621-aa72-40b7-9909-2e7970d87600",
+      "comment": "",
+      "command": "click",
+      "target": "id=appointmentType",
+      "targets": [
+        ["id=appointmentType", "id"],
+        ["name=appointmentType", "name"],
+        ["css=#appointmentType", "css:finder"],
+        ["xpath=//select[@id='appointmentType']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "864b3bfb-bd30-45a7-9d30-bde43bc69a8b",
+      "comment": "",
+      "command": "click",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "02f914a7-e60c-4d4b-ba97-90f1085d009a",
+      "comment": "",
+      "command": "type",
+      "target": "id=description",
+      "targets": [
+        ["id=description", "id"],
+        ["name=description", "name"],
+        ["css=#description", "css:finder"],
+        ["xpath=//textarea[@id='description']", "xpath:attributes"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "I am going to go to restaurant for my birthday"
+    }, {
+      "id": "ae91c9eb-8ff1-4f50-b640-96669c2bcfb8",
+      "comment": "",
+      "command": "click",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["name=location", "name"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//li[7]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fe5e4a81-4efd-42c8-a300-775db07b29d1",
+      "comment": "",
+      "command": "type",
+      "target": "id=location",
+      "targets": [
+        ["id=location", "id"],
+        ["name=location", "name"],
+        ["css=#location", "css:finder"],
+        ["xpath=//input[@id='location']", "xpath:attributes"],
+        ["xpath=//li[7]/input", "xpath:position"]
+      ],
+      "value": "4 Flanders CT. Moncton NB, E1C 0K6 | 46.0881061,-64.7912451"
+    }, {
+      "id": "3e3ea8c6-9036-4bfc-80df-07e6e927dbec",
+      "comment": "",
+      "command": "click",
+      "target": "id=studentCount",
+      "targets": [
+        ["id=studentCount", "id"],
+        ["name=studentCount", "name"],
+        ["css=#studentCount", "css:finder"],
+        ["xpath=//input[@id='studentCount']", "xpath:attributes"],
+        ["xpath=//li[8]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2494410f-a1c6-42c5-ac74-0482f2b0f86b",
+      "comment": "",
+      "command": "type",
+      "target": "id=studentCount",
+      "targets": [
+        ["id=studentCount", "id"],
+        ["name=studentCount", "name"],
+        ["css=#studentCount", "css:finder"],
+        ["xpath=//input[@id='studentCount']", "xpath:attributes"],
+        ["xpath=//li[8]/input", "xpath:position"]
+      ],
+      "value": "12"
+    }, {
+      "id": "8e8be336-f7c5-40e3-9cd1-34e07020877e",
+      "comment": "",
+      "command": "click",
+      "target": "id=course",
+      "targets": [
+        ["id=course", "id"],
+        ["name=course", "name"],
+        ["css=#course", "css:finder"],
+        ["xpath=//select[@id='course']", "xpath:attributes"],
+        ["xpath=//li[9]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3153f671-e0ae-48c6-8592-3fab21387211",
+      "comment": "",
+      "command": "select",
+      "target": "id=course",
+      "targets": [],
+      "value": "label=Practical Nurse"
+    }, {
+      "id": "912d91ca-440f-4844-8439-f97779a23802",
+      "comment": "",
+      "command": "click",
+      "target": "id=course",
+      "targets": [
+        ["id=course", "id"],
+        ["name=course", "name"],
+        ["css=#course", "css:finder"],
+        ["xpath=//select[@id='course']", "xpath:attributes"],
+        ["xpath=//li[9]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5001c6f8-831e-4125-9ef6-6d3e56eb8fef",
+      "comment": "",
+      "command": "click",
+      "target": "id=course",
+      "targets": [
+        ["id=course", "id"],
+        ["name=course", "name"],
+        ["css=#course", "css:finder"],
+        ["xpath=//select[@id='course']", "xpath:attributes"],
+        ["xpath=//li[9]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d865fce3-9449-44c2-aa9a-697a19dded08",
+      "comment": "",
+      "command": "select",
+      "target": "id=course",
+      "targets": [],
+      "value": "label=Medical Office Administration"
+    }, {
+      "id": "f5412516-73fb-4570-aa40-f61ed40774dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=course",
+      "targets": [
+        ["id=course", "id"],
+        ["name=course", "name"],
+        ["css=#course", "css:finder"],
+        ["xpath=//select[@id='course']", "xpath:attributes"],
+        ["xpath=//li[9]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c949a89f-fdb7-4969-b68d-a00cc98c9feb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Schedule Now']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "99cd74c8-b673-48c9-8188-feadbd23fa59",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.timeslot:nth-child(1) > .title",
+      "targets": [
+        ["css=.timeslot:nth-child(1) > .title", "css:finder"],
+        ["xpath=//div[@id='appointments']/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'My Birthday')]", "xpath:innerText"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "c00c1675-aa24-4553-96c4-d0c011926d4a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.timeslot:nth-child(1) > .location",
+      "targets": [
+        ["css=.timeslot:nth-child(1) > .location", "css:finder"],
+        ["xpath=//div[@id='appointments']/div/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'I am going to go to restaurant for my birthday')]", "xpath:innerText"]
+      ],
+      "value": "I am going to go to restaurant for my birthday"
+    }, {
+      "id": "84640ef4-25d5-4dfb-b521-b6b9e947d85e",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 4 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "ccef43dd-ded7-4173-9d57-6a1e8ae4a740",
+    "name": "5-UpdateProctor",
+    "commands": [{
+      "id": "822aca03-a106-475a-be4a-8f48c11fcd08",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 5 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1aee925-c172-4201-9803-ebc01c1c4511",
+      "comment": "Open specific Date of month (zero-based Month index)",
+      "command": "open",
+      "target": "/ProctorScheduler/dailyview.jsp?date=2020-06-19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6b617b76-24db-4619-b601-3ba3bd129369",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-list-ul",
+      "targets": [
+        ["css=.fa-list-ul", "css:finder"],
+        ["xpath=//a[@id='appointmentViewIcon']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "16f2de3a-082f-4c85-8d8d-c4908ce006d1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.event:nth-child(1) .eventOptionsReserve",
+      "targets": [
+        ["css=.event:nth-child(2) .eventOptionsReserve > .eventText", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": "Reserve Event"
+    }, {
+      "id": "037c7c32-fcd6-4e46-857d-77ee8d9ef34b",
+      "comment": "",
+      "command": "chooseOkOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cbafb084-bbb7-43d0-bc4c-fd722250afe0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.event:nth-child(1) .eventOptionsReserve > .eventText",
+      "targets": [
+        ["css=.event:nth-child(2) .eventOptionsReserve > .eventText", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li[2]/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/div[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "afb33af7-7165-477a-9d5c-78a14c3c0613",
+      "comment": "",
+      "command": "webdriverChooseOkOnVisibleConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3df5f814-8bd8-460c-ab05-2a24b65db085",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-list-ul",
+      "targets": [
+        ["css=.fa-list-ul", "css:finder"],
+        ["xpath=//a[@id='appointmentViewIcon']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4324e8a1-d264-4379-97a2-f8d3fb66ff15",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=.event:nth-child(1) .eventOptionsRelease",
+      "targets": [
+        ["linkText=Reserve Event", "linkText"],
+        ["css=.event:nth-child(1) .eventOptionsReserve", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#reserve')]", "xpath:href"],
+        ["xpath=//li/div[2]/a", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "d5e11f58-b8da-4535-bd8c-c5f47073386c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.event:nth-child(1) .eventOptionsRelease",
+      "targets": [
+        ["linkText=Reserve Event", "linkText"],
+        ["css=.event:nth-child(1) .eventOptionsReserve", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#reserve')]", "xpath:href"],
+        ["xpath=//li/div[2]/a", "xpath:position"]
+      ],
+      "value": "Release Proctored Event"
+    }, {
+      "id": "c3bef007-df9e-47ba-bf75-37a5f8b8813b",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 5 completed",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a248501-9566-4d9e-8791-6c5af88defd4",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "1af93eb1-2bbb-4778-92d5-d09ae9f602d2",
+    "name": "6-CheckEvent",
+    "commands": [{
+      "id": "4646aeed-65d8-42a2-a464-6a81161ef402",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 6 started",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d47aac75-a338-4f69-820f-ccea9076efbf",
+      "comment": "Open specific Date of month (zero-based Month index)",
+      "command": "open",
+      "target": "/ProctorScheduler/dailyview.jsp?date=2020-06-19",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "858ff909-eaf7-45a6-be54-e8751fd8478c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-list-ul",
+      "targets": [
+        ["css=.fa-list-ul", "css:finder"],
+        ["xpath=//a[@id='appointmentViewIcon']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b6f6cd9d-1acd-41bd-9312-08cd678cbed8",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.event:nth-child(1) .appointmentTitle",
+      "targets": [
+        ["css=.event:nth-child(1) .appointmentTitle", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div/h4/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'birthday')]", "xpath:innerText"]
+      ],
+      "value": "birthday"
+    }, {
+      "id": "af9c4d6d-e625-4b4c-a8d8-e72eb57fd612",
+      "comment": "",
+      "command": "click",
+      "target": "css=.event:nth-child(1) .eventOptionsEdit > .eventText",
+      "targets": [
+        ["css=.event:nth-child(1) .eventOptionsEdit > .eventText", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "54e9ff4b-e030-474b-a7ef-43f1346de2c9",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "id=title",
+      "targets": [],
+      "value": "30000"
+    }, {
+      "id": "1c3d744a-9eec-41a4-a47a-5b02f1f50a92",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd4f3453-3270-4e06-8374-11de3e7fe0e3",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "My Birthday"
+    }, {
+      "id": "c27fa978-e26e-4fff-ab3a-f59a6adcce3d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Schedule Now']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60afeb45-1fb7-4318-b8f0-53ff21d57bbe",
+      "comment": "",
+      "command": "click",
+      "target": "css=.schedule",
+      "targets": [
+        ["css=.schedule", "css:finder"],
+        ["xpath=//div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2e196ab-21d1-4073-86aa-b58093a792cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-list-ul",
+      "targets": [
+        ["css=.fa-list-ul", "css:finder"],
+        ["xpath=//a[@id='appointmentViewIcon']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3c6b63a7-d667-4abd-831e-71a550f9aee4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.event:nth-child(1) > .eventInfo",
+      "targets": [
+        ["css=.event:nth-child(1) > .eventInfo", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div", "xpath:idRelative"],
+        ["xpath=//li/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f906d835-1fd1-459c-8364-cc52b8b8b530",
+      "comment": "",
+      "command": "click",
+      "target": "css=.eventOptionsEdit > .eventText",
+      "targets": [
+        ["css=.eventOptionsEdit > .eventText", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div[2]/a[2]/span", "xpath:idRelative"],
+        ["xpath=//a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "67ad8b1c-13f0-4f0b-b22d-473607e56bc6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.button",
+      "targets": [
+        ["css=.button", "css:finder"],
+        ["xpath=//input[@value='Schedule Now']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cf3a3065-c0bb-4808-bb7b-316ef28fd3f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa-list-ul",
+      "targets": [
+        ["css=.fa-list-ul", "css:finder"],
+        ["xpath=//a[@id='appointmentViewIcon']/i", "xpath:idRelative"],
+        ["xpath=//div[2]/a[2]/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f573b391-0f65-44bf-90e0-fde2a2205feb",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.event:nth-child(1) .appointmentTitle",
+      "targets": [
+        ["css=.event:nth-child(1) .appointmentTitle", "css:finder"],
+        ["xpath=//div[@id='appointmentView']/ul/li/div/h4/span[2]", "xpath:idRelative"],
+        ["xpath=//span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'My Birthday')]", "xpath:innerText"]
+      ],
+      "value": "My Birthday"
+    }, {
+      "id": "bae0d81b-34bd-44ec-9aee-5361587a2a03",
+      "comment": "",
+      "command": "echo",
+      "target": "Test 6 completed",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "b648e34a-5aa3-4073-8c3c-b1565c16d496",
+    "name": "ProctorScheduler Selenium Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["867b5f2b-009d-4563-94d4-4ba6543d8ca1", "128f8dbe-002b-4310-927f-f53197dbb86e", "9ebfab0b-f6a8-4e5c-bf5e-01263df1458a", "faf486ab-d5ec-4fd1-a776-9356956aad35", "ccef43dd-ded7-4173-9d57-6a1e8ae4a740", "1af93eb1-2bbb-4778-92d5-d09ae9f602d2", "9b92afb1-32c9-4e8e-a7b0-47d768996f61"]
+  }],
+  "urls": ["http://localhost:8080/", "http://localhost:8080/ProctorScheduler"],
+  "plugins": []
+}

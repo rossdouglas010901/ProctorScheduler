@@ -1,0 +1,226 @@
+{
+  "id": "c219a21f-af4e-41e7-8b1f-3ccbcd3363f7",
+  "version": "2.0",
+  "name": "ProctorScheduler",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "47200a76-efec-4222-bea4-db96d4a82994",
+    "name": "AddAppointment",
+    "commands": [{
+      "id": "99327cf5-752b-458e-8cdf-c19fc24b2b51",
+      "comment": "",
+      "command": "open",
+      "target": "/ProctorScheduler/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5dd5e1a8-93fb-4b70-ae05-dc1e4f65e7fa",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1456x876",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b3c3e1-2c9c-4b75-a64c-d1eae3fe69b7",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=div:nth-child(2) > .feild", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "86dc4b83-ef84-45ce-a710-f6c8c9ca8bcc",
+      "comment": "",
+      "command": "click",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=div:nth-child(2) > .feild", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7ff85b50-9a03-4222-8572-421627f5cadb",
+      "comment": "",
+      "command": "type",
+      "target": "name=name",
+      "targets": [
+        ["name=name", "name"],
+        ["css=div:nth-child(2) > .feild", "css:finder"],
+        ["xpath=//input[@name='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Bryan Copeland"
+    }, {
+      "id": "9e297b63-1edd-4e05-ad99-326242823917",
+      "comment": "",
+      "command": "click",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=div:nth-child(3) > .feild", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81cac797-865d-4773-8523-c78b6cbf21b1",
+      "comment": "",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=div:nth-child(3) > .feild", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "bcopeland@oultoncollege.com"
+    }, {
+      "id": "032fe6e5-a391-42e0-8dfd-2cc2d857520c",
+      "comment": "",
+      "command": "click",
+      "target": "name=action",
+      "targets": [
+        ["name=action", "name"],
+        ["css=.submit", "css:finder"],
+        ["xpath=//input[@name='action']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd2c770f-0b79-43d8-b476-872eb2513ada",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=1pm",
+      "targets": [
+        ["linkText=1pm", "linkText"],
+        ["css=tr:nth-child(8) a", "css:finder"],
+        ["xpath=//a[contains(text(),'1pm')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'schedule.jsp?time=13')]", "xpath:href"],
+        ["xpath=//tr[7]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1pm')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "178c45c8-276f-4d37-86e9-e5d481169a16",
+      "comment": "",
+      "command": "click",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=h2 > input", "css:finder"],
+        ["xpath=//input[@name='description']", "xpath:attributes"],
+        ["xpath=//h2/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c613ef-ecfc-4229-8ed4-fa2416dd742b",
+      "comment": "",
+      "command": "type",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=h2 > input", "css:finder"],
+        ["xpath=//input[@name='description']", "xpath:attributes"],
+        ["xpath=//h2/input", "xpath:position"]
+      ],
+      "value": "Afternoon meeting"
+    }, {
+      "id": "cfb28423-938e-478d-a9c1-657213e22ec1",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@value='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "380be098-9f83-4e02-9ce9-f95e52862968",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=9am",
+      "targets": [
+        ["linkText=9am", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'9am')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'schedule.jsp?time=9')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'9am')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8ec248d3-eaf6-4548-93fa-b6524ce1b295",
+      "comment": "",
+      "command": "click",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=h2 > input", "css:finder"],
+        ["xpath=//input[@name='description']", "xpath:attributes"],
+        ["xpath=//h2/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77a7c949-ba1d-4dc7-944b-fb29fa3e343d",
+      "comment": "",
+      "command": "type",
+      "target": "name=description",
+      "targets": [
+        ["name=description", "name"],
+        ["css=h2 > input", "css:finder"],
+        ["xpath=//input[@name='description']", "xpath:attributes"],
+        ["xpath=//h2/input", "xpath:position"]
+      ],
+      "value": "Morning appointment"
+    }, {
+      "id": "d69dca22-d395-4dfd-b91e-cfb0ca4330ff",
+      "comment": "",
+      "command": "click",
+      "target": "css=div > input",
+      "targets": [
+        ["css=div > input", "css:finder"],
+        ["xpath=//input[@value='submit']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d1561690-67c0-430b-9c60-608526f6544a",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6481a872-20a7-4249-b52a-9a0fbe2d7e16",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(2)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(2)", "css:finder"],
+        ["xpath=//tr[3]/td[2]", "xpath:position"],
+        ["xpath=//td[contains(.,'Morning appointment')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "49638cec-9be2-419f-bffd-da1e7f35feb2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["47200a76-efec-4222-bea4-db96d4a82994"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}

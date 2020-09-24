@@ -1,0 +1,599 @@
+/* ***************************************************************************
+ * main.css
+ *   All common styles to be applied across multiple pages should go in here.
+ * ************************************************************************* */
+/*@import "reset.css";*/
+
+
+/* ***************************************************************************
+ * HEADER and top navigation
+ * ************************************************************************* */
+header.topnav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-content: stretch;
+    align-items: center;
+}
+header.topnav div:nth-child(1) {
+  flex: 0 1 auto;
+  padding-right: 1rem;
+  width: auto;
+}
+header.topnav div:nth-child(1):hover {
+    background-color: #f1f1f1;
+}
+header.topnav div:nth-child(2) {
+    flex: 0 1 auto;
+    text-align: right;
+    padding-right: 15px;
+    width: auto;
+}
+
+header.topnav .logo {
+    height: 1rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #e55039;
+}
+
+
+/* ***************************************************************************
+ * Error messaging
+ * ************************************************************************* */
+.errorMessage {
+    margin: auto;
+    margin-top: 10rem;
+    box-shadow: 0 20px 25px -5px rgba(229, 80, 57, 0.1), 0 10px 10px -5px rgba(229, 80, 57, 0.04);
+    width: 50%;
+    max-width: 50%;
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.errorMessage h2 {
+    color: #050305;
+    font-weight: 900;
+    font-size: 1.8em;
+    text-align: left;
+}
+.errorMessage p {
+    color: #050305;
+    font-size: 125%;
+}
+
+.errorMessage button {
+    font-weight: 900;
+    width: 25%;
+    margin-top: 1.5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #e55039;
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(229, 80, 57, 0.1), 0 2px 4px -1px rgba(229, 80, 57, 0.06);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.errorMessage button:hover {
+    box-shadow: 0 20px 25px -5px rgba(229, 80, 57, 0.1), 0 10px 10px -5px rgba(229, 80, 57, 0.04);
+}
+
+.error {
+    color: #ff0000;
+}
+
+/* ***************************************************************************
+ * Calendar specific styles mostly required by "calendar.jsp".
+ * ************************************************************************* */
+.content {
+    margin-left: 5rem;
+    margin-right: 5rem;
+    width: calc(100% - 14rem); /* 14rem is Adjusting for padding and margins*/
+    padding: 2rem;
+}
+
+.calendar th:hover {
+    background-color: #fff;
+}
+
+.calendar {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    table-layout: fixed;
+}
+
+.calendar th {
+    font-size: 2em;
+}
+
+.calendar th.calendarWeekDay {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.calendar th a {
+    color: #e55039;
+}
+
+.calendar th.calendarWeekDay i {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #e55039;
+}
+
+.calendarWeekDay {
+    text-align: center;
+    font-size: 150%;
+    font-weight: bold;
+    padding: 0.5rem;
+    border-bottom: 5px solid #e55039;
+}
+
+.calendarDay {
+    background-color: #FCFCFC;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 60px;
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.calendarDay:hover {
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.calendarDay:hover a {
+    color: #e55039;
+}
+
+.calendarDay a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.calendarCurDay {
+    background-color: #FCFCFC;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+    height: 60px;
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.calendarCurDay:hover {
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.calendarCurDay a {
+    color: #e55039;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.calendarEmpty {
+    box-shadow: none;
+}
+
+.calendarEmpty:hover {
+    background: transparent;
+}
+
+.badge {
+    background:             radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:    -moz-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:     -ms-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background:      -o-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+        background: -webkit-radial-gradient( 5px -9px, circle, white 8%, red 26px );
+    background-color: red;
+    border: 2px solid white;
+    border-radius: 12px; /* one half of ( (border * 2) + height + padding ) */
+    box-shadow: 1px 1px 1px black;
+    color: white;
+    font: bold 15px/13px Helvetica, Verdana, Tahoma;
+    height: 16px;
+    padding: 4px 3px 0 3px;
+    text-align: center;
+    min-width: 14px;
+}
+
+/* only needed for this sample */
+.badge {
+    float: left;
+    left: 25px;
+    margin: 6px;
+    position: relative;
+    top: 25px;
+}
+
+
+
+
+/* ***************************************************************************
+ * DailyView specific styles mostly required by "dailyview.jsp".
+ * ************************************************************************* */
+label {
+    display: block;
+}
+
+#dailyview td:empty {
+    background-color: lightblue;
+}
+
+#dailyview td {
+    background-color: red;
+}
+
+.dateHeader {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    width: 100%
+}
+
+.addNewEvent{
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+    font-weight: 900;
+    margin-top: 1.5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #e55039;
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(229, 80, 57, 0.1), 0 2px 4px -1px rgba(229, 80, 57, 0.06);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.addNewEvent:hover {
+    box-shadow: 0 20px 25px -5px rgba(229, 80, 57, 0.1), 0 10px 10px -5px rgba(229, 80, 57, 0.04);
+}
+
+.event{
+	width: calc(100% - 2rem);/*adapt to padding*/
+	border-radius: 10px;
+	padding: 1rem;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	margin-bottom: 2rem;
+	background-color: #FCFCFC;
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);	
+    display: grid;
+    grid-template-columns: 1.5fr 0.5fr;
+}
+
+.event:hover{
+	box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+.event .eventOptions a{
+	text-decoration: none;
+	float: right;
+}
+
+.eventOptionsDelete{
+    color: #e55039;
+}
+
+.eventOptionsEdit{
+    color: #3498db;
+}
+
+.eventOptionsAccept{
+    color: #2ecc71;
+}
+
+.event .eventOptions a:hover{
+    color: #000000;
+}
+
+
+/* ***************************************************************************
+ * Schedule specific styles mostly required by "schedule.jsp".
+ * ************************************************************************* */
+.schedule {
+    width: calc(100% - 4rem);
+    background-color: #ffffff;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.schedule h3 {
+    padding: 0;
+    margin: 1rem;
+}
+
+.schedule .scheduleHeader i{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    color: #e55039;
+}
+
+.schedule .scheduleHeader{
+    font-size: 175%;
+    text-align: left;
+    padding: 0;
+    margin: none;
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+
+.scheduleBody {
+    width: 100%;
+}
+
+.schedule .scheduleSubtitles {
+    font-size: 150%;
+    font-weight: bold;
+    border-bottom: 5px solid #e55039;
+    padding: 0.5rem;
+}
+
+.schedule .scheduleSubtitle1 {
+    width: 25%;
+}
+
+.schedule .scheduleSubtitle2 {
+    width: 75%;
+}
+
+.scheduleHour {
+    background-color: #FEFEFE;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    padding: 0.5rem;
+    transition: box-shadow 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.scheduleHour a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.scheduleHour:hover {
+    font-weight: bold;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+}
+
+.scheduleHour:hover a {
+    color: #e55039;
+}
+
+.scheduleForm {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+    table-layout: fixed;
+}
+
+.scheduleForm h3 {
+	font-size: 200%;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1rem;
+}
+
+.scheduleForm fieldset {
+	border: none;
+}
+
+.scheduleForm legend {
+    font-size: 150%;
+    font-weight: bold;
+    border-bottom: 5px solid #e55039;
+    width: 100%;
+    padding-bottom: 0.5rem;
+}
+
+.scheduleForm label {
+    font-size: 125%;
+    margin: 0.25rem;
+    font-weight: bold;
+}
+
+ scheduleForm #description {
+    width: calc(100% - 2rem);
+    Height: 10rem;
+    font-family: 'Lato', sans-serif;
+    line-height: 2rem;
+    font-size: 120%;
+    border: 0;
+    resize: none;
+    padding: 1rem;
+}
+
+.scheduleForm .submit {
+    font-weight: 900;
+    width: 25%;
+    margin-top: 1.5rem;
+    height: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: #e55039;
+    color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(229, 80, 57, 0.1), 0 2px 4px -1px rgba(229, 80, 57, 0.06);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    margin-left: 37.5%;
+    margin-right: 37.5%;
+}
+
+.scheduleForm .submit:hover {
+    box-shadow: 0 20px 25px -5px rgba(229, 80, 57, 0.1), 0 10px 10px -5px rgba(229, 80, 57, 0.04);
+}
+
+.wrapper {
+    list-style-type: none;
+    padding: 0;
+    border-radius: 3px;
+}
+.form-row {
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+.form-row > label {
+    padding: .5em 1em .5em 0;
+    flex: 1;
+}
+.form-row > input,
+.form-row > textarea,
+.form-row > select {
+    flex: 2;
+}
+
+.form-row > input,
+.form-row > textarea,
+.form-row > select,
+.form-row > button {
+    padding: .5em;
+}
+.form-row > button {
+   background: gray;
+   color: white;
+   border: 0;
+}
+@media screen and (min-width: 768px) {
+    .form-row > input,
+    .form-row > textarea,
+    .form-row > select  {
+        flex: 3;
+    }
+}
+@media screen and (min-width: 992px) {
+    .form-row > input,
+    .form-row > textarea,
+    .form-row > select {
+        flex: 4;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .form-row > input,
+    .form-row > textarea,
+    .form-row > select {
+        flex: 5;
+    }
+}
+
+
+/* ***************************************************************************
+ * FOOTER
+ * ************************************************************************* */
+.footerspacer {
+    height: 50px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    width: 100%;
+    height: 25px;
+    background-color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 3px 0 rgba(127, 140, 141, 0.1), 0 -4px 6px -2px rgba(127, 140, 141, 0.06);
+}
+
+
+/* ************************************************************** */
+/* Responsive styling (Laptop, Tablet, Mobile, etc)               */
+/* ************************************************************** */
+@media only screen and (max-width: 1060px) {
+    #calendar th.calendarWeekDay {
+        width: 3ch;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    #calendar td.calendarDay {
+        font-size: 0.8em;
+    }
+    .content {
+        padding: 0px;
+        margin: 0px;
+        width: 100vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #calendar th.calendarWeekDay {
+        width: 1ch;
+        overflow: hidden;
+        white-space: nowrap;
+        word-break: break-all;
+        text-align: left;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .calendar th {
+        font-size: 1.4em;
+    }
+    td.calendarDay, td.calendarCurDay {
+        background-color: #fff;
+        box-shadow: none;
+        border: 0px;
+    }
+    td.calendarDay:hover, td.calendarCurDay:hover {
+        background-color: #fff;
+        box-shadow: none;
+        border: 0px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    #calendar {
+        min-width: 320px;
+    }
+    .calendar {
+        padding: 0.5rem;
+    }
+    td.calendarDay, td.calendarCurDay {
+        font-size: 0.8em;
+    }
+}
+
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+    border: 4px solid rgba(255, 255, 255, 1);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

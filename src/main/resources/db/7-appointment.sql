@@ -1,0 +1,4 @@
+INSERT INTO `appointment` (`AppointmentID`, `StartTime`, `EndTime`, `Title`, `Description`, `Location`, `StudentCount`, `ProctorID`, `CourseID`, `AppointmentTypeID`) VALUES 
+(1, '2020-06-01 8:00:00', '2020-06-01 11:00:00', 'Business quiz', 'Overseeing a basic quiz for one of the Entrepreneurship classes', '4 Flanders CT. Moncton NB, E1C 0K6 | 46.0881061,-64.7912451', 1, 1, 1, 3), 
+(2, '2020-06-17 10:00:00', '2020-06-17 11:00:00', 'Dental Hygiene 101 Make-up Test', 'Reading each section is required for this make-up test', '5 Pacific AVE. Moncton NB, E1E 1A1 | 46.0886411,-64.7991117', 5, 7, 1, 2),
+(3, '2020-06-23 16:30:00', '2020-06-23 17:30:00', 'Policing qualifications test', 'Important Final Exam make-up session for these students', '100 Cameron ST. Moncton NB, E1C 5Y6 | 46.0881061,-64.7912451', 2, 4, 1, 2);
